@@ -12,10 +12,13 @@ function FoundItemsDirective() {
   var ddo = {
     templateUrl: 'foundItems.html',
     scope: {
-      items: '=',
+      items: '<',
       onRemove: '&'
-    }
-  };
+    },
+		controller: NarrowItDownController,
+		controllerAs: 'conn',
+		bindToController: true
+	}
   return ddo;
 }
 
