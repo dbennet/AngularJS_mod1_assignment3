@@ -42,6 +42,8 @@ function NarrowItDownController($scope, MenuSearchService) {
       }
 
       //conn.categories = response.data.menu_items;
+      console.log("check narrow");
+      console.log(narrow);
       conn.categories = narrow;
 
     })
