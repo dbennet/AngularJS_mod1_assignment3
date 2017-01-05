@@ -1,6 +1,6 @@
 <ol>
-  <li ng-repeat="category in conn.categories">
-    {{ category.name }}
+  <li ng-repeat="item in list">
+    {{ item.name }}
     <button ng-click="conn.onRemove({index: $index});">Remove Item</button>
   </li>
 </ol>
