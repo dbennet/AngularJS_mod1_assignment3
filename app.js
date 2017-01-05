@@ -16,6 +16,7 @@ function FoundItemsDirective() {
       foundItems: '<',
       onRemove: '&'
     }
+    };
   return ddo;
 }
 
