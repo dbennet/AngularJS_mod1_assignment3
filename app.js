@@ -13,7 +13,8 @@ function FoundItemsDirective() {
     templateUrl: 'foundItems.html',
     restrict: 'E',
     scope: {
-      list: '=myList',
+      //list: '=myList',
+      items:  '<',
       onRemove: '&'
     }
     };
