@@ -11,17 +11,19 @@ angular.module('NarrowItDownApp', [])
 function FoundItemsDirective() {
   var ddo = {
     templateUrl: 'foundItems.html',
+    restrict: 'E',
     scope: {
       items: '<',
       onRemove: '&'
     },
-		controller: NarrowItDownController,
+		controller: FoundItemsDirectiveController,
 		controllerAs: 'conn',
 		bindToController: true
 	}
   return ddo;
 }
 
+ function FoundItemsDirectiveController() { }
 
 NarrowItDownController.$inject = ['$scope', 'MenuSearchService'];
 function NarrowItDownController($scope, MenuSearchService) {
