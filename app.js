@@ -15,15 +15,11 @@ function FoundItemsDirective() {
       //list: '=myList',
       items:  '<',
       onRemove: '&'
-    },
-     controller: ListDirectiveController,
-     controllerAs: 'cont',
-     bindToController: true
+    }
     };
   return ddo;
 }
 
-function ListDirectiveController() { }
 
 NarrowItDownController.$inject = ['$scope', 'MenuSearchService'];
 function NarrowItDownController($scope, MenuSearchService) {
