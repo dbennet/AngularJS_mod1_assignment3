@@ -7,7 +7,7 @@
 
 
 <ol>
-  <li ng-repeat="item in list">
+  <li ng-repeat="item in items">
     {{ item.name }}
     <button ng-click="conn.onRemove({index: $index});">Remove Item</button>
   </li>
