@@ -15,7 +15,10 @@ function FoundItemsDirective() {
       //list: '=myList',
       items:  '<',
       onRemove: '&'
-    }
+    },
+     controller: NarrowItDownController,
+     controllerAs: 'conn',
+     bindToController: true
     };
   return ddo;
 }
