@@ -54,6 +54,7 @@ function NarrowItDownController($scope, MenuSearchService) {
   };
 
   conn.removeItem = function (itemIndex) {
+    console.log("we should be here after clicking remove");
     conn.categories.splice(itemIndex, 1);
   };
 
